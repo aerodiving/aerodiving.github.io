@@ -737,6 +737,13 @@ $({ target: 'Set', proto: true, real: true, forced: IS_PURE }, {
 
 /***/ }),
 
+/***/ "47Mi":
+/***/ (function(module, exports, __webpack_require__) {
+
+// extracted by mini-css-extract-plugin
+
+/***/ }),
+
 /***/ "49+q":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -835,6 +842,43 @@ module.exports = CORRECT_PROTOTYPE_GETTER ? Object.getPrototypeOf : function (O)
     return O.constructor.prototype;
   } return O instanceof Object ? ObjectPrototype : null;
 };
+
+
+/***/ }),
+
+/***/ "4X9F":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var _style_base_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("aO+S");
+/* harmony import */ var _style_base_css__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_style_base_css__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _overlay_index_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__("pxog");
+/* harmony import */ var _overlay_index_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_overlay_index_css__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _info_index_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__("nXDD");
+/* harmony import */ var _info_index_css__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_info_index_css__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _icon_index_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__("N0PS");
+/* harmony import */ var _icon_index_css__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_icon_index_css__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _popup_index_css__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__("TXUN");
+/* harmony import */ var _popup_index_css__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_popup_index_css__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _loading_index_css__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__("47Mi");
+/* harmony import */ var _loading_index_css__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_loading_index_css__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _button_index_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__("vBum");
+/* harmony import */ var _button_index_css__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_button_index_css__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var _goods_action_button_index_css__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__("EXXg");
+/* harmony import */ var _goods_action_button_index_css__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_goods_action_button_index_css__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var _goods_action_index_css__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__("TPmL");
+/* harmony import */ var _goods_action_index_css__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_goods_action_index_css__WEBPACK_IMPORTED_MODULE_8__);
+/* harmony import */ var _index_css__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__("L8ve");
+/* harmony import */ var _index_css__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(_index_css__WEBPACK_IMPORTED_MODULE_9__);
+
+
+
+
+
+
+
+
+
 
 
 /***/ }),
@@ -2168,6 +2212,74 @@ module.exports = !DESCRIPTORS && !fails(function () {
 
 /***/ }),
 
+/***/ "EXXg":
+/***/ (function(module, exports, __webpack_require__) {
+
+// extracted by mini-css-extract-plugin
+
+/***/ }),
+
+/***/ "EyXw":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* unused harmony export supportsPassive */
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return on; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return off; });
+/* unused harmony export stopPropagation */
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return preventDefault; });
+/* harmony import */ var ___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("oUJm");
+
+// eslint-disable-next-line import/no-mutable-exports
+var supportsPassive = false;
+
+if (!___WEBPACK_IMPORTED_MODULE_0__[/* isServer */ "f"]) {
+  try {
+    var opts = {};
+    Object.defineProperty(opts, 'passive', {
+      // eslint-disable-next-line getter-return
+      get: function get() {
+        /* istanbul ignore next */
+        supportsPassive = true;
+      }
+    });
+    window.addEventListener('test-passive', null, opts); // eslint-disable-next-line no-empty
+  } catch (e) {}
+}
+
+function on(target, event, handler, passive) {
+  if (passive === void 0) {
+    passive = false;
+  }
+
+  if (!___WEBPACK_IMPORTED_MODULE_0__[/* isServer */ "f"]) {
+    target.addEventListener(event, handler, supportsPassive ? {
+      capture: false,
+      passive: passive
+    } : false);
+  }
+}
+function off(target, event, handler) {
+  if (!___WEBPACK_IMPORTED_MODULE_0__[/* isServer */ "f"]) {
+    target.removeEventListener(event, handler);
+  }
+}
+function stopPropagation(event) {
+  event.stopPropagation();
+}
+function preventDefault(event, isStopPropagation) {
+  /* istanbul ignore else */
+  if (typeof event.cancelable !== 'boolean' || event.cancelable) {
+    event.preventDefault();
+  }
+
+  if (isStopPropagation) {
+    stopPropagation(event);
+  }
+}
+
+/***/ }),
+
 /***/ "FXp9":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -2672,6 +2784,1377 @@ var setToStringTag = __webpack_require__("1E5z");
 // https://tc39.github.io/ecma262/#sec-math-@@tostringtag
 setToStringTag(Math, 'Math', true);
 
+
+/***/ }),
+
+/***/ "IkEG":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+
+// EXTERNAL MODULE: ./node_modules/@babel/runtime/helpers/esm/extends.js
+var esm_extends = __webpack_require__("wx14");
+
+// EXTERNAL MODULE: ./node_modules/vue/dist/vue.min.js
+var vue_min = __webpack_require__("9rUL");
+var vue_min_default = /*#__PURE__*/__webpack_require__.n(vue_min);
+
+// EXTERNAL MODULE: ./node_modules/@vue/babel-helper-vue-jsx-merge-props/dist/helper.js
+var helper = __webpack_require__("Jjj3");
+var helper_default = /*#__PURE__*/__webpack_require__.n(helper);
+
+// EXTERNAL MODULE: ./node_modules/vant/es/utils/create/index.js + 8 modules
+var create = __webpack_require__("0oIA");
+
+// EXTERNAL MODULE: ./node_modules/vant/es/utils/index.js
+var utils = __webpack_require__("oUJm");
+
+// EXTERNAL MODULE: ./node_modules/vant/es/utils/format/unit.js + 1 modules
+var unit = __webpack_require__("6o6n");
+
+// CONCATENATED MODULE: ./node_modules/vant/es/utils/constant.js
+// color
+var RED = '#ee0a24'; // border
+
+var BORDER = 'van-hairline';
+var BORDER_TOP = BORDER + "--top";
+var BORDER_LEFT = BORDER + "--left";
+var BORDER_BOTTOM = BORDER + "--bottom";
+var BORDER_SURROUND = BORDER + "--surround";
+var BORDER_TOP_BOTTOM = BORDER + "--top-bottom";
+var BORDER_UNSET_TOP_BOTTOM = BORDER + "-unset--top-bottom";
+// CONCATENATED MODULE: ./node_modules/vant/es/mixins/popup/context.js
+var context = {
+  zIndex: 2000,
+  lockCount: 0,
+  stack: [],
+  find: function find(vm) {
+    return this.stack.filter(function (item) {
+      return item.vm === vm;
+    })[0];
+  },
+  remove: function remove(vm) {
+    var item = this.find(vm);
+    if (!item) return;
+    item.vm = null;
+    item.overlay = null;
+    var index = this.stack.indexOf(item);
+    this.stack.splice(index, 1);
+  }
+};
+// EXTERNAL MODULE: ./node_modules/vant/es/utils/functional.js
+var functional = __webpack_require__("ujET");
+
+// EXTERNAL MODULE: ./node_modules/vant/es/utils/dom/event.js
+var dom_event = __webpack_require__("EyXw");
+
+// CONCATENATED MODULE: ./node_modules/vant/es/overlay/index.js
+
+
+// Utils
+
+
+ // Types
+
+var _createNamespace = Object(create["a" /* createNamespace */])('overlay'),
+    createComponent = _createNamespace[0],
+    bem = _createNamespace[1];
+
+function preventTouchMove(event) {
+  Object(dom_event["c" /* preventDefault */])(event, true);
+}
+
+function Overlay(h, props, slots, ctx) {
+  var style = Object(esm_extends["a" /* default */])({
+    zIndex: props.zIndex
+  }, props.customStyle);
+
+  if (Object(utils["c" /* isDef */])(props.duration)) {
+    style.animationDuration = props.duration + "s";
+  }
+
+  return h("transition", {
+    "attrs": {
+      "name": "van-fade"
+    }
+  }, [h("div", helper_default()([{
+    "directives": [{
+      name: "show",
+      value: props.show
+    }],
+    "style": style,
+    "class": [bem(), props.className],
+    "on": {
+      "touchmove": props.lockScroll ? preventTouchMove : utils["g" /* noop */]
+    }
+  }, Object(functional["b" /* inherit */])(ctx, true)]), [slots.default == null ? void 0 : slots.default()])]);
+}
+
+Overlay.props = {
+  show: Boolean,
+  zIndex: [Number, String],
+  duration: [Number, String],
+  className: null,
+  customStyle: Object,
+  lockScroll: {
+    type: Boolean,
+    default: true
+  }
+};
+/* harmony default export */ var es_overlay = (createComponent(Overlay));
+// CONCATENATED MODULE: ./node_modules/vant/es/utils/dom/node.js
+function removeNode(el) {
+  var parent = el.parentNode;
+
+  if (parent) {
+    parent.removeChild(el);
+  }
+}
+// CONCATENATED MODULE: ./node_modules/vant/es/mixins/popup/overlay.js
+
+
+
+
+
+var defaultConfig = {
+  className: '',
+  customStyle: {}
+};
+
+function mountOverlay(vm) {
+  return Object(functional["c" /* mount */])(es_overlay, {
+    on: {
+      // close popup when overlay clicked & closeOnClickOverlay is true
+      click: function click() {
+        vm.$emit('click-overlay');
+
+        if (vm.closeOnClickOverlay) {
+          if (vm.onClickOverlay) {
+            vm.onClickOverlay();
+          } else {
+            vm.close();
+          }
+        }
+      }
+    }
+  });
+}
+
+function updateOverlay(vm) {
+  var item = context.find(vm);
+
+  if (item) {
+    var el = vm.$el;
+    var config = item.config,
+        overlay = item.overlay;
+
+    if (el && el.parentNode) {
+      el.parentNode.insertBefore(overlay.$el, el);
+    }
+
+    Object(esm_extends["a" /* default */])(overlay, defaultConfig, config, {
+      show: true
+    });
+  }
+}
+function openOverlay(vm, config) {
+  var item = context.find(vm);
+
+  if (item) {
+    item.config = config;
+  } else {
+    var overlay = mountOverlay(vm);
+    context.stack.push({
+      vm: vm,
+      config: config,
+      overlay: overlay
+    });
+  }
+
+  updateOverlay(vm);
+}
+function closeOverlay(vm) {
+  var item = context.find(vm);
+
+  if (item) {
+    item.overlay.show = false;
+  }
+}
+function removeOverlay(vm) {
+  var item = context.find(vm);
+
+  if (item) {
+    removeNode(item.overlay.$el);
+    context.remove(vm);
+  }
+}
+// CONCATENATED MODULE: ./node_modules/vant/es/utils/dom/scroll.js
+function isWindow(val) {
+  return val === window;
+} // get nearest scroll element
+// https://github.com/vant-ui/vant/issues/3823
+
+
+var overflowScrollReg = /scroll|auto|overlay/i;
+function getScroller(el, root) {
+  if (root === void 0) {
+    root = window;
+  }
+
+  var node = el;
+
+  while (node && node.tagName !== 'HTML' && node.tagName !== 'BODY' && node.nodeType === 1 && node !== root) {
+    var _window$getComputedSt = window.getComputedStyle(node),
+        overflowY = _window$getComputedSt.overflowY;
+
+    if (overflowScrollReg.test(overflowY)) {
+      return node;
+    }
+
+    node = node.parentNode;
+  }
+
+  return root;
+}
+function getScrollTop(el) {
+  var top = 'scrollTop' in el ? el.scrollTop : el.pageYOffset; // iOS scroll bounce cause minus scrollTop
+
+  return Math.max(top, 0);
+}
+function setScrollTop(el, value) {
+  if ('scrollTop' in el) {
+    el.scrollTop = value;
+  } else {
+    el.scrollTo(el.scrollX, value);
+  }
+}
+function getRootScrollTop() {
+  return window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
+}
+function setRootScrollTop(value) {
+  setScrollTop(window, value);
+  setScrollTop(document.body, value);
+} // get distance from element top to page top or scroller top
+
+function getElementTop(el, scroller) {
+  if (isWindow(el)) {
+    return 0;
+  }
+
+  var scrollTop = scroller ? getScrollTop(scroller) : getRootScrollTop();
+  return el.getBoundingClientRect().top + scrollTop;
+}
+function getVisibleHeight(el) {
+  if (isWindow(el)) {
+    return el.innerHeight;
+  }
+
+  return el.getBoundingClientRect().height;
+}
+function getVisibleTop(el) {
+  if (isWindow(el)) {
+    return 0;
+  }
+
+  return el.getBoundingClientRect().top;
+}
+// EXTERNAL MODULE: ./node_modules/vant/es/mixins/touch.js
+var touch = __webpack_require__("OHXF");
+
+// CONCATENATED MODULE: ./node_modules/vant/es/mixins/portal.js
+function getElement(selector) {
+  if (typeof selector === 'string') {
+    return document.querySelector(selector);
+  }
+
+  return selector();
+}
+
+function PortalMixin(_temp) {
+  var _ref = _temp === void 0 ? {} : _temp,
+      ref = _ref.ref,
+      afterPortal = _ref.afterPortal;
+
+  return {
+    props: {
+      getContainer: [String, Function]
+    },
+    watch: {
+      getContainer: 'portal'
+    },
+    mounted: function mounted() {
+      if (this.getContainer) {
+        this.portal();
+      }
+    },
+    methods: {
+      portal: function portal() {
+        var getContainer = this.getContainer;
+        var el = ref ? this.$refs[ref] : this.$el;
+        var container;
+
+        if (getContainer) {
+          container = getElement(getContainer);
+        } else if (this.$parent) {
+          container = this.$parent.$el;
+        }
+
+        if (container && container !== el.parentNode) {
+          container.appendChild(el);
+        }
+
+        if (afterPortal) {
+          afterPortal.call(this);
+        }
+      }
+    }
+  };
+}
+// EXTERNAL MODULE: ./node_modules/vant/es/mixins/bind-event.js
+var bind_event = __webpack_require__("X74q");
+
+// CONCATENATED MODULE: ./node_modules/vant/es/mixins/close-on-popstate.js
+
+
+var CloseOnPopstateMixin = {
+  mixins: [Object(bind_event["a" /* BindEventMixin */])(function (bind, isBind) {
+    this.handlePopstate(isBind && this.closeOnPopstate);
+  })],
+  props: {
+    closeOnPopstate: Boolean
+  },
+  data: function data() {
+    return {
+      bindStatus: false
+    };
+  },
+  watch: {
+    closeOnPopstate: function closeOnPopstate(val) {
+      this.handlePopstate(val);
+    }
+  },
+  methods: {
+    onPopstate: function onPopstate() {
+      this.close();
+      this.shouldReopen = false;
+    },
+    handlePopstate: function handlePopstate(bind) {
+      /* istanbul ignore if */
+      if (this.$isServer) {
+        return;
+      }
+
+      if (this.bindStatus !== bind) {
+        this.bindStatus = bind;
+        var action = bind ? dom_event["b" /* on */] : dom_event["a" /* off */];
+        action(window, 'popstate', this.onPopstate);
+      }
+    }
+  }
+};
+// CONCATENATED MODULE: ./node_modules/vant/es/mixins/popup/index.js
+// Context
+
+ // Utils
+
+
+
+ // Mixins
+
+
+
+
+var popupMixinProps = {
+  // Initial rendering animation
+  transitionAppear: Boolean,
+  // whether to show popup
+  value: Boolean,
+  // whether to show overlay
+  overlay: Boolean,
+  // overlay custom style
+  overlayStyle: Object,
+  // overlay custom class name
+  overlayClass: String,
+  // whether to close popup when overlay is clicked
+  closeOnClickOverlay: Boolean,
+  // z-index
+  zIndex: [Number, String],
+  // prevent body scroll
+  lockScroll: {
+    type: Boolean,
+    default: true
+  },
+  // whether to lazy render
+  lazyRender: {
+    type: Boolean,
+    default: true
+  }
+};
+function PopupMixin(options) {
+  if (options === void 0) {
+    options = {};
+  }
+
+  return {
+    mixins: [touch["a" /* TouchMixin */], CloseOnPopstateMixin, PortalMixin({
+      afterPortal: function afterPortal() {
+        if (this.overlay) {
+          updateOverlay();
+        }
+      }
+    })],
+    provide: function provide() {
+      return {
+        vanPopup: this
+      };
+    },
+    props: popupMixinProps,
+    data: function data() {
+      this.onReopenCallback = [];
+      return {
+        inited: this.value
+      };
+    },
+    computed: {
+      shouldRender: function shouldRender() {
+        return this.inited || !this.lazyRender;
+      }
+    },
+    watch: {
+      value: function value(val) {
+        var type = val ? 'open' : 'close';
+        this.inited = this.inited || this.value;
+        this[type]();
+
+        if (!options.skipToggleEvent) {
+          this.$emit(type);
+        }
+      },
+      overlay: 'renderOverlay'
+    },
+    mounted: function mounted() {
+      if (this.value) {
+        this.open();
+      }
+    },
+
+    /* istanbul ignore next */
+    activated: function activated() {
+      if (this.shouldReopen) {
+        this.$emit('input', true);
+        this.shouldReopen = false;
+      }
+    },
+    beforeDestroy: function beforeDestroy() {
+      removeOverlay(this);
+
+      if (this.opened) {
+        this.removeLock();
+      }
+
+      if (this.getContainer) {
+        removeNode(this.$el);
+      }
+    },
+
+    /* istanbul ignore next */
+    deactivated: function deactivated() {
+      if (this.value) {
+        this.close();
+        this.shouldReopen = true;
+      }
+    },
+    methods: {
+      open: function open() {
+        /* istanbul ignore next */
+        if (this.$isServer || this.opened) {
+          return;
+        } // cover default zIndex
+
+
+        if (this.zIndex !== undefined) {
+          context.zIndex = this.zIndex;
+        }
+
+        this.opened = true;
+        this.renderOverlay();
+        this.addLock();
+        this.onReopenCallback.forEach(function (callback) {
+          callback();
+        });
+      },
+      addLock: function addLock() {
+        if (this.lockScroll) {
+          Object(dom_event["b" /* on */])(document, 'touchstart', this.touchStart);
+          Object(dom_event["b" /* on */])(document, 'touchmove', this.onTouchMove);
+
+          if (!context.lockCount) {
+            document.body.classList.add('van-overflow-hidden');
+          }
+
+          context.lockCount++;
+        }
+      },
+      removeLock: function removeLock() {
+        if (this.lockScroll && context.lockCount) {
+          context.lockCount--;
+          Object(dom_event["a" /* off */])(document, 'touchstart', this.touchStart);
+          Object(dom_event["a" /* off */])(document, 'touchmove', this.onTouchMove);
+
+          if (!context.lockCount) {
+            document.body.classList.remove('van-overflow-hidden');
+          }
+        }
+      },
+      close: function close() {
+        if (!this.opened) {
+          return;
+        }
+
+        closeOverlay(this);
+        this.opened = false;
+        this.removeLock();
+        this.$emit('input', false);
+      },
+      onTouchMove: function onTouchMove(event) {
+        this.touchMove(event);
+        var direction = this.deltaY > 0 ? '10' : '01';
+        var el = getScroller(event.target, this.$el);
+        var scrollHeight = el.scrollHeight,
+            offsetHeight = el.offsetHeight,
+            scrollTop = el.scrollTop;
+        var status = '11';
+        /* istanbul ignore next */
+
+        if (scrollTop === 0) {
+          status = offsetHeight >= scrollHeight ? '00' : '01';
+        } else if (scrollTop + offsetHeight >= scrollHeight) {
+          status = '10';
+        }
+        /* istanbul ignore next */
+
+
+        if (status !== '11' && this.direction === 'vertical' && !(parseInt(status, 2) & parseInt(direction, 2))) {
+          Object(dom_event["c" /* preventDefault */])(event, true);
+        }
+      },
+      renderOverlay: function renderOverlay() {
+        var _this = this;
+
+        if (this.$isServer || !this.value) {
+          return;
+        }
+
+        this.$nextTick(function () {
+          _this.updateZIndex(_this.overlay ? 1 : 0);
+
+          if (_this.overlay) {
+            openOverlay(_this, {
+              zIndex: context.zIndex++,
+              duration: _this.duration,
+              className: _this.overlayClass,
+              customStyle: _this.overlayStyle
+            });
+          } else {
+            closeOverlay(_this);
+          }
+        });
+      },
+      updateZIndex: function updateZIndex(value) {
+        if (value === void 0) {
+          value = 0;
+        }
+
+        this.$el.style.zIndex = ++context.zIndex + value;
+      },
+      onReopen: function onReopen(callback) {
+        this.onReopenCallback.push(callback);
+      }
+    }
+  };
+}
+// CONCATENATED MODULE: ./node_modules/vant/es/utils/router.js
+/**
+ * Vue Router support
+ */
+function isRedundantNavigation(err) {
+  return err.name === 'NavigationDuplicated' || // compatible with vue-router@3.3
+  err.message && err.message.indexOf('redundant navigation') !== -1;
+}
+
+function route(router, config) {
+  var to = config.to,
+      url = config.url,
+      replace = config.replace;
+
+  if (to && router) {
+    var promise = router[replace ? 'replace' : 'push'](to);
+    /* istanbul ignore else */
+
+    if (promise && promise.catch) {
+      promise.catch(function (err) {
+        if (err && !isRedundantNavigation(err)) {
+          throw err;
+        }
+      });
+    }
+  } else if (url) {
+    replace ? location.replace(url) : location.href = url;
+  }
+}
+function functionalRoute(context) {
+  route(context.parent && context.parent.$router, context.props);
+}
+var routeProps = {
+  url: String,
+  replace: Boolean,
+  to: [String, Object]
+};
+// EXTERNAL MODULE: ./node_modules/vant/es/icon/index.js + 1 modules
+var es_icon = __webpack_require__("rQYt");
+
+// CONCATENATED MODULE: ./node_modules/vant/es/loading/index.js
+
+// Utils
+
+ // Types
+
+var loading_createNamespace = Object(create["a" /* createNamespace */])('loading'),
+    loading_createComponent = loading_createNamespace[0],
+    loading_bem = loading_createNamespace[1];
+
+function LoadingIcon(h, props) {
+  if (props.type === 'spinner') {
+    var Spin = [];
+
+    for (var i = 0; i < 12; i++) {
+      Spin.push(h("i"));
+    }
+
+    return Spin;
+  }
+
+  return h("svg", {
+    "class": loading_bem('circular'),
+    "attrs": {
+      "viewBox": "25 25 50 50"
+    }
+  }, [h("circle", {
+    "attrs": {
+      "cx": "50",
+      "cy": "50",
+      "r": "20",
+      "fill": "none"
+    }
+  })]);
+}
+
+function LoadingText(h, props, slots) {
+  if (slots.default) {
+    var _props$textColor;
+
+    var style = {
+      fontSize: Object(unit["a" /* addUnit */])(props.textSize),
+      color: (_props$textColor = props.textColor) != null ? _props$textColor : props.color
+    };
+    return h("span", {
+      "class": loading_bem('text'),
+      "style": style
+    }, [slots.default()]);
+  }
+}
+
+function Loading(h, props, slots, ctx) {
+  var color = props.color,
+      size = props.size,
+      type = props.type;
+  var style = {
+    color: color
+  };
+
+  if (size) {
+    var iconSize = Object(unit["a" /* addUnit */])(size);
+    style.width = iconSize;
+    style.height = iconSize;
+  }
+
+  return h("div", helper_default()([{
+    "class": loading_bem([type, {
+      vertical: props.vertical
+    }])
+  }, Object(functional["b" /* inherit */])(ctx, true)]), [h("span", {
+    "class": loading_bem('spinner', type),
+    "style": style
+  }, [LoadingIcon(h, props)]), LoadingText(h, props, slots)]);
+}
+
+Loading.props = {
+  color: String,
+  size: [Number, String],
+  vertical: Boolean,
+  textSize: [Number, String],
+  textColor: String,
+  type: {
+    type: String,
+    default: 'circular'
+  }
+};
+/* harmony default export */ var es_loading = (loading_createComponent(Loading));
+// CONCATENATED MODULE: ./node_modules/vant/es/button/index.js
+
+
+// Utils
+
+
+
+ // Components
+
+
+ // Types
+
+var button_createNamespace = Object(create["a" /* createNamespace */])('button'),
+    button_createComponent = button_createNamespace[0],
+    button_bem = button_createNamespace[1];
+
+function Button(h, props, slots, ctx) {
+  var _ref;
+
+  var tag = props.tag,
+      icon = props.icon,
+      type = props.type,
+      color = props.color,
+      plain = props.plain,
+      disabled = props.disabled,
+      loading = props.loading,
+      hairline = props.hairline,
+      loadingText = props.loadingText,
+      iconPosition = props.iconPosition;
+  var style = {};
+
+  if (color) {
+    style.color = plain ? color : 'white';
+
+    if (!plain) {
+      // Use background instead of backgroundColor to make linear-gradient work
+      style.background = color;
+    } // hide border when color is linear-gradient
+
+
+    if (color.indexOf('gradient') !== -1) {
+      style.border = 0;
+    } else {
+      style.borderColor = color;
+    }
+  }
+
+  function onClick(event) {
+    if (props.loading) {
+      event.preventDefault();
+    }
+
+    if (!loading && !disabled) {
+      Object(functional["a" /* emit */])(ctx, 'click', event);
+      functionalRoute(ctx);
+    }
+  }
+
+  function onTouchstart(event) {
+    Object(functional["a" /* emit */])(ctx, 'touchstart', event);
+  }
+
+  var classes = [button_bem([type, props.size, {
+    plain: plain,
+    loading: loading,
+    disabled: disabled,
+    hairline: hairline,
+    block: props.block,
+    round: props.round,
+    square: props.square
+  }]), (_ref = {}, _ref[BORDER_SURROUND] = hairline, _ref)];
+
+  function renderIcon() {
+    if (loading) {
+      return slots.loading ? slots.loading() : h(es_loading, {
+        "class": button_bem('loading'),
+        "attrs": {
+          "size": props.loadingSize,
+          "type": props.loadingType,
+          "color": "currentColor"
+        }
+      });
+    }
+
+    if (slots.icon) {
+      return h("div", {
+        "class": button_bem('icon')
+      }, [slots.icon()]);
+    }
+
+    if (icon) {
+      return h(es_icon["a" /* default */], {
+        "attrs": {
+          "name": icon,
+          "classPrefix": props.iconPrefix
+        },
+        "class": button_bem('icon')
+      });
+    }
+  }
+
+  function renderContent() {
+    var content = [];
+
+    if (iconPosition === 'left') {
+      content.push(renderIcon());
+    }
+
+    var text;
+
+    if (loading) {
+      text = loadingText;
+    } else {
+      text = slots.default ? slots.default() : props.text;
+    }
+
+    if (text) {
+      content.push(h("span", {
+        "class": button_bem('text')
+      }, [text]));
+    }
+
+    if (iconPosition === 'right') {
+      content.push(renderIcon());
+    }
+
+    return content;
+  }
+
+  return h(tag, helper_default()([{
+    "style": style,
+    "class": classes,
+    "attrs": {
+      "type": props.nativeType,
+      "disabled": disabled
+    },
+    "on": {
+      "click": onClick,
+      "touchstart": onTouchstart
+    }
+  }, Object(functional["b" /* inherit */])(ctx)]), [h("div", {
+    "class": button_bem('content')
+  }, [renderContent()])]);
+}
+
+Button.props = Object(esm_extends["a" /* default */])({}, routeProps, {
+  text: String,
+  icon: String,
+  color: String,
+  block: Boolean,
+  plain: Boolean,
+  round: Boolean,
+  square: Boolean,
+  loading: Boolean,
+  hairline: Boolean,
+  disabled: Boolean,
+  iconPrefix: String,
+  nativeType: String,
+  loadingText: String,
+  loadingType: String,
+  tag: {
+    type: String,
+    default: 'button'
+  },
+  type: {
+    type: String,
+    default: 'default'
+  },
+  size: {
+    type: String,
+    default: 'normal'
+  },
+  loadingSize: {
+    type: String,
+    default: '20px'
+  },
+  iconPosition: {
+    type: String,
+    default: 'left'
+  }
+});
+/* harmony default export */ var es_button = (button_createComponent(Button));
+// EXTERNAL MODULE: ./node_modules/vant/es/mixins/relation.js + 1 modules
+var relation = __webpack_require__("mISK");
+
+// CONCATENATED MODULE: ./node_modules/vant/es/goods-action/index.js
+
+
+
+var goods_action_createNamespace = Object(create["a" /* createNamespace */])('goods-action'),
+    goods_action_createComponent = goods_action_createNamespace[0],
+    goods_action_bem = goods_action_createNamespace[1];
+
+/* harmony default export */ var goods_action = (goods_action_createComponent({
+  mixins: [Object(relation["b" /* ParentMixin */])('vanGoodsAction')],
+  props: {
+    safeAreaInsetBottom: {
+      type: Boolean,
+      default: true
+    }
+  },
+  render: function render() {
+    var h = arguments[0];
+    return h("div", {
+      "class": goods_action_bem({
+        unfit: !this.safeAreaInsetBottom
+      })
+    }, [this.slots()]);
+  }
+}));
+// CONCATENATED MODULE: ./node_modules/vant/es/goods-action-button/index.js
+
+
+
+
+
+
+var goods_action_button_createNamespace = Object(create["a" /* createNamespace */])('goods-action-button'),
+    goods_action_button_createComponent = goods_action_button_createNamespace[0],
+    goods_action_button_bem = goods_action_button_createNamespace[1];
+
+/* harmony default export */ var goods_action_button = (goods_action_button_createComponent({
+  mixins: [Object(relation["a" /* ChildrenMixin */])('vanGoodsAction')],
+  props: Object(esm_extends["a" /* default */])({}, routeProps, {
+    type: String,
+    text: String,
+    icon: String,
+    color: String,
+    loading: Boolean,
+    disabled: Boolean
+  }),
+  computed: {
+    isFirst: function isFirst() {
+      var prev = this.parent && this.parent.children[this.index - 1];
+      return !prev || prev.$options.name !== this.$options.name;
+    },
+    isLast: function isLast() {
+      var next = this.parent && this.parent.children[this.index + 1];
+      return !next || next.$options.name !== this.$options.name;
+    }
+  },
+  methods: {
+    onClick: function onClick(event) {
+      this.$emit('click', event);
+      route(this.$router, this);
+    }
+  },
+  render: function render() {
+    var h = arguments[0];
+    return h(es_button, {
+      "class": goods_action_button_bem([{
+        first: this.isFirst,
+        last: this.isLast
+      }, this.type]),
+      "attrs": {
+        "size": "large",
+        "type": this.type,
+        "icon": this.icon,
+        "color": this.color,
+        "loading": this.loading,
+        "disabled": this.disabled
+      },
+      "on": {
+        "click": this.onClick
+      }
+    }, [this.slots() || this.text]);
+  }
+}));
+// CONCATENATED MODULE: ./node_modules/vant/es/dialog/Dialog.js
+
+
+
+
+
+
+
+
+var Dialog_createNamespace = Object(create["a" /* createNamespace */])('dialog'),
+    Dialog_createComponent = Dialog_createNamespace[0],
+    Dialog_bem = Dialog_createNamespace[1],
+    t = Dialog_createNamespace[2];
+
+/* harmony default export */ var Dialog = (Dialog_createComponent({
+  mixins: [PopupMixin()],
+  props: {
+    title: String,
+    theme: String,
+    width: [Number, String],
+    message: String,
+    className: null,
+    callback: Function,
+    beforeClose: Function,
+    messageAlign: String,
+    cancelButtonText: String,
+    cancelButtonColor: String,
+    confirmButtonText: String,
+    confirmButtonColor: String,
+    showCancelButton: Boolean,
+    overlay: {
+      type: Boolean,
+      default: true
+    },
+    allowHtml: {
+      type: Boolean,
+      default: true
+    },
+    transition: {
+      type: String,
+      default: 'van-dialog-bounce'
+    },
+    showConfirmButton: {
+      type: Boolean,
+      default: true
+    },
+    closeOnPopstate: {
+      type: Boolean,
+      default: true
+    },
+    closeOnClickOverlay: {
+      type: Boolean,
+      default: false
+    }
+  },
+  data: function data() {
+    return {
+      loading: {
+        confirm: false,
+        cancel: false
+      }
+    };
+  },
+  methods: {
+    onClickOverlay: function onClickOverlay() {
+      this.handleAction('overlay');
+    },
+    handleAction: function handleAction(action) {
+      var _this = this;
+
+      this.$emit(action); // show not trigger close event when hidden
+
+      if (!this.value) {
+        return;
+      }
+
+      if (this.beforeClose) {
+        this.loading[action] = true;
+        this.beforeClose(action, function (state) {
+          if (state !== false && _this.loading[action]) {
+            _this.onClose(action);
+          }
+
+          _this.loading.confirm = false;
+          _this.loading.cancel = false;
+        });
+      } else {
+        this.onClose(action);
+      }
+    },
+    onClose: function onClose(action) {
+      this.close();
+
+      if (this.callback) {
+        this.callback(action);
+      }
+    },
+    onOpened: function onOpened() {
+      var _this2 = this;
+
+      this.$emit('opened');
+      this.$nextTick(function () {
+        var _this2$$refs$dialog;
+
+        (_this2$$refs$dialog = _this2.$refs.dialog) == null ? void 0 : _this2$$refs$dialog.focus();
+      });
+    },
+    onClosed: function onClosed() {
+      this.$emit('closed');
+    },
+    onKeydown: function onKeydown(event) {
+      var _this3 = this;
+
+      if (event.key === 'Escape' || event.key === 'Enter') {
+        // skip keyboard events of child elements
+        if (event.target !== this.$refs.dialog) {
+          return;
+        }
+
+        var onEventType = {
+          Enter: this.showConfirmButton ? function () {
+            return _this3.handleAction('confirm');
+          } : utils["g" /* noop */],
+          Escape: this.showCancelButton ? function () {
+            return _this3.handleAction('cancel');
+          } : utils["g" /* noop */]
+        };
+        onEventType[event.key]();
+        this.$emit('keydown', event);
+      }
+    },
+    genRoundButtons: function genRoundButtons() {
+      var _this4 = this;
+
+      var h = this.$createElement;
+      return h(goods_action, {
+        "class": Dialog_bem('footer')
+      }, [this.showCancelButton && h(goods_action_button, {
+        "attrs": {
+          "size": "large",
+          "type": "warning",
+          "text": this.cancelButtonText || t('cancel'),
+          "color": this.cancelButtonColor,
+          "loading": this.loading.cancel
+        },
+        "class": Dialog_bem('cancel'),
+        "on": {
+          "click": function click() {
+            _this4.handleAction('cancel');
+          }
+        }
+      }), this.showConfirmButton && h(goods_action_button, {
+        "attrs": {
+          "size": "large",
+          "type": "danger",
+          "text": this.confirmButtonText || t('confirm'),
+          "color": this.confirmButtonColor,
+          "loading": this.loading.confirm
+        },
+        "class": Dialog_bem('confirm'),
+        "on": {
+          "click": function click() {
+            _this4.handleAction('confirm');
+          }
+        }
+      })]);
+    },
+    genButtons: function genButtons() {
+      var _this5 = this,
+          _ref;
+
+      var h = this.$createElement;
+      var multiple = this.showCancelButton && this.showConfirmButton;
+      return h("div", {
+        "class": [BORDER_TOP, Dialog_bem('footer')]
+      }, [this.showCancelButton && h(es_button, {
+        "attrs": {
+          "size": "large",
+          "loading": this.loading.cancel,
+          "text": this.cancelButtonText || t('cancel'),
+          "nativeType": "button"
+        },
+        "class": Dialog_bem('cancel'),
+        "style": {
+          color: this.cancelButtonColor
+        },
+        "on": {
+          "click": function click() {
+            _this5.handleAction('cancel');
+          }
+        }
+      }), this.showConfirmButton && h(es_button, {
+        "attrs": {
+          "size": "large",
+          "loading": this.loading.confirm,
+          "text": this.confirmButtonText || t('confirm'),
+          "nativeType": "button"
+        },
+        "class": [Dialog_bem('confirm'), (_ref = {}, _ref[BORDER_LEFT] = multiple, _ref)],
+        "style": {
+          color: this.confirmButtonColor
+        },
+        "on": {
+          "click": function click() {
+            _this5.handleAction('confirm');
+          }
+        }
+      })]);
+    },
+    genContent: function genContent(hasTitle, messageSlot) {
+      var h = this.$createElement;
+
+      if (messageSlot) {
+        return h("div", {
+          "class": Dialog_bem('content')
+        }, [messageSlot]);
+      }
+
+      var message = this.message,
+          messageAlign = this.messageAlign;
+
+      if (message) {
+        var _bem, _domProps;
+
+        var data = {
+          class: Dialog_bem('message', (_bem = {
+            'has-title': hasTitle
+          }, _bem[messageAlign] = messageAlign, _bem)),
+          domProps: (_domProps = {}, _domProps[this.allowHtml ? 'innerHTML' : 'textContent'] = message, _domProps)
+        };
+        return h("div", {
+          "class": Dialog_bem('content', {
+            isolated: !hasTitle
+          })
+        }, [h("div", helper_default()([{}, data]))]);
+      }
+    }
+  },
+  render: function render() {
+    var h = arguments[0];
+
+    if (!this.shouldRender) {
+      return;
+    }
+
+    var message = this.message;
+    var messageSlot = this.slots();
+    var title = this.slots('title') || this.title;
+    var Title = title && h("div", {
+      "class": Dialog_bem('header', {
+        isolated: !message && !messageSlot
+      })
+    }, [title]);
+    return h("transition", {
+      "attrs": {
+        "name": this.transition
+      },
+      "on": {
+        "afterEnter": this.onOpened,
+        "afterLeave": this.onClosed
+      }
+    }, [h("div", {
+      "directives": [{
+        name: "show",
+        value: this.value
+      }],
+      "attrs": {
+        "role": "dialog",
+        "aria-labelledby": this.title || message,
+        "tabIndex": 0
+      },
+      "class": [Dialog_bem([this.theme]), this.className],
+      "style": {
+        width: Object(unit["a" /* addUnit */])(this.width)
+      },
+      "ref": "dialog",
+      "on": {
+        "keydown": this.onKeydown
+      }
+    }, [Title, this.genContent(title, messageSlot), this.theme === 'round-button' ? this.genRoundButtons() : this.genButtons()])]);
+  }
+}));
+// CONCATENATED MODULE: ./node_modules/vant/es/dialog/index.js
+
+
+
+
+var instance;
+
+function isInDocument(element) {
+  return document.body.contains(element);
+}
+
+function initInstance() {
+  if (instance) {
+    instance.$destroy();
+  }
+
+  instance = new (vue_min_default.a.extend(Dialog))({
+    el: document.createElement('div'),
+    // avoid missing animation when first rendered
+    propsData: {
+      lazyRender: false
+    }
+  });
+  instance.$on('input', function (value) {
+    instance.value = value;
+  });
+}
+
+function dialog_Dialog(options) {
+  /* istanbul ignore if */
+  if (utils["f" /* isServer */]) {
+    return Promise.resolve();
+  }
+
+  return new Promise(function (resolve, reject) {
+    if (!instance || !isInDocument(instance.$el)) {
+      initInstance();
+    }
+
+    Object(esm_extends["a" /* default */])(instance, dialog_Dialog.currentOptions, options, {
+      resolve: resolve,
+      reject: reject
+    });
+  });
+}
+
+dialog_Dialog.defaultOptions = {
+  value: true,
+  title: '',
+  width: '',
+  theme: null,
+  message: '',
+  overlay: true,
+  className: '',
+  allowHtml: true,
+  lockScroll: true,
+  transition: 'van-dialog-bounce',
+  beforeClose: null,
+  overlayClass: '',
+  overlayStyle: null,
+  messageAlign: '',
+  getContainer: 'body',
+  cancelButtonText: '',
+  cancelButtonColor: null,
+  confirmButtonText: '',
+  confirmButtonColor: null,
+  showConfirmButton: true,
+  showCancelButton: false,
+  closeOnPopstate: true,
+  closeOnClickOverlay: false,
+  callback: function callback(action) {
+    instance[action === 'confirm' ? 'resolve' : 'reject'](action);
+  }
+};
+dialog_Dialog.alert = dialog_Dialog;
+
+dialog_Dialog.confirm = function (options) {
+  return dialog_Dialog(Object(esm_extends["a" /* default */])({
+    showCancelButton: true
+  }, options));
+};
+
+dialog_Dialog.close = function () {
+  if (instance) {
+    instance.value = false;
+  }
+};
+
+dialog_Dialog.setDefaultOptions = function (options) {
+  Object(esm_extends["a" /* default */])(dialog_Dialog.currentOptions, options);
+};
+
+dialog_Dialog.resetDefaultOptions = function () {
+  dialog_Dialog.currentOptions = Object(esm_extends["a" /* default */])({}, dialog_Dialog.defaultOptions);
+};
+
+dialog_Dialog.resetDefaultOptions();
+
+dialog_Dialog.install = function () {
+  vue_min_default.a.use(Dialog);
+};
+
+dialog_Dialog.Component = Dialog;
+vue_min_default.a.prototype.$dialog = dialog_Dialog;
+/* harmony default export */ var dialog = __webpack_exports__["a"] = (dialog_Dialog);
 
 /***/ }),
 
@@ -4195,6 +5678,13 @@ var index = {
 
 /***/ }),
 
+/***/ "L8ve":
+/***/ (function(module, exports, __webpack_require__) {
+
+// extracted by mini-css-extract-plugin
+
+/***/ }),
+
 /***/ "LPSS":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -4458,6 +5948,78 @@ module.exports = function (it) {
   } return it;
 };
 
+
+/***/ }),
+
+/***/ "OHXF":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TouchMixin; });
+/* harmony import */ var _utils_dom_event__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("EyXw");
+
+
+function getDirection(x, y) {
+  if (x > y) {
+    return 'horizontal';
+  }
+
+  if (y > x) {
+    return 'vertical';
+  }
+
+  return '';
+}
+
+var TouchMixin = {
+  data: function data() {
+    return {
+      direction: ''
+    };
+  },
+  methods: {
+    touchStart: function touchStart(event) {
+      this.resetTouchStatus();
+      this.startX = event.touches[0].clientX;
+      this.startY = event.touches[0].clientY;
+    },
+    touchMove: function touchMove(event) {
+      var touch = event.touches[0]; // safari back will set clientX to negative number
+
+      this.deltaX = touch.clientX < 0 ? 0 : touch.clientX - this.startX;
+      this.deltaY = touch.clientY - this.startY;
+      this.offsetX = Math.abs(this.deltaX);
+      this.offsetY = Math.abs(this.deltaY); // lock direction when distance is greater than a certain value
+
+      var LOCK_DIRECTION_DISTANCE = 10;
+
+      if (!this.direction || this.offsetX < LOCK_DIRECTION_DISTANCE && this.offsetY < LOCK_DIRECTION_DISTANCE) {
+        this.direction = getDirection(this.offsetX, this.offsetY);
+      }
+    },
+    resetTouchStatus: function resetTouchStatus() {
+      this.direction = '';
+      this.deltaX = 0;
+      this.deltaY = 0;
+      this.offsetX = 0;
+      this.offsetY = 0;
+    },
+    // avoid Vue 2.6 event bubble issues by manually binding events
+    // https://github.com/vant-ui/vant/issues/3015
+    bindTouchEvent: function bindTouchEvent(el) {
+      var onTouchStart = this.onTouchStart,
+          onTouchMove = this.onTouchMove,
+          onTouchEnd = this.onTouchEnd;
+      Object(_utils_dom_event__WEBPACK_IMPORTED_MODULE_0__[/* on */ "b"])(el, 'touchstart', onTouchStart);
+      Object(_utils_dom_event__WEBPACK_IMPORTED_MODULE_0__[/* on */ "b"])(el, 'touchmove', onTouchMove);
+
+      if (onTouchEnd) {
+        Object(_utils_dom_event__WEBPACK_IMPORTED_MODULE_0__[/* on */ "b"])(el, 'touchend', onTouchEnd);
+        Object(_utils_dom_event__WEBPACK_IMPORTED_MODULE_0__[/* on */ "b"])(el, 'touchcancel', onTouchEnd);
+      }
+    }
+  }
+};
 
 /***/ }),
 
@@ -4809,6 +6371,13 @@ module.exports = IS_PURE ? getIterator : function (it) {
 
 /***/ }),
 
+/***/ "TPmL":
+/***/ (function(module, exports, __webpack_require__) {
+
+// extracted by mini-css-extract-plugin
+
+/***/ }),
+
 /***/ "TWQb":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -4845,6 +6414,13 @@ module.exports = {
   indexOf: createMethod(false)
 };
 
+
+/***/ }),
+
+/***/ "TXUN":
+/***/ (function(module, exports, __webpack_require__) {
+
+// extracted by mini-css-extract-plugin
 
 /***/ }),
 
@@ -5095,58 +6671,9 @@ function isHidden(el) {
   var parentHidden = el.offsetParent === null && style.position !== 'fixed';
   return hidden || parentHidden;
 }
-// EXTERNAL MODULE: ./node_modules/vant/es/utils/index.js
-var utils = __webpack_require__("oUJm");
+// EXTERNAL MODULE: ./node_modules/vant/es/utils/dom/event.js
+var dom_event = __webpack_require__("EyXw");
 
-// CONCATENATED MODULE: ./node_modules/vant/es/utils/dom/event.js
-
-// eslint-disable-next-line import/no-mutable-exports
-var supportsPassive = false;
-
-if (!utils["f" /* isServer */]) {
-  try {
-    var opts = {};
-    Object.defineProperty(opts, 'passive', {
-      // eslint-disable-next-line getter-return
-      get: function get() {
-        /* istanbul ignore next */
-        supportsPassive = true;
-      }
-    });
-    window.addEventListener('test-passive', null, opts); // eslint-disable-next-line no-empty
-  } catch (e) {}
-}
-
-function on(target, event, handler, passive) {
-  if (passive === void 0) {
-    passive = false;
-  }
-
-  if (!utils["f" /* isServer */]) {
-    target.addEventListener(event, handler, supportsPassive ? {
-      capture: false,
-      passive: passive
-    } : false);
-  }
-}
-function off(target, event, handler) {
-  if (!utils["f" /* isServer */]) {
-    target.removeEventListener(event, handler);
-  }
-}
-function stopPropagation(event) {
-  event.stopPropagation();
-}
-function preventDefault(event, isStopPropagation) {
-  /* istanbul ignore else */
-  if (typeof event.cancelable !== 'boolean' || event.cancelable) {
-    event.preventDefault();
-  }
-
-  if (isStopPropagation) {
-    stopPropagation(event);
-  }
-}
 // EXTERNAL MODULE: ./node_modules/vant/es/utils/dom/raf.js
 var raf = __webpack_require__("RZg1");
 
@@ -5203,103 +6730,15 @@ function addNumber(num1, num2) {
   var cardinal = Math.pow(10, 10);
   return Math.round((num1 + num2) * cardinal) / cardinal;
 }
-// CONCATENATED MODULE: ./node_modules/vant/es/mixins/touch.js
+// EXTERNAL MODULE: ./node_modules/vant/es/mixins/touch.js
+var touch = __webpack_require__("OHXF");
 
-
-function getDirection(x, y) {
-  if (x > y) {
-    return 'horizontal';
-  }
-
-  if (y > x) {
-    return 'vertical';
-  }
-
-  return '';
-}
-
-var TouchMixin = {
-  data: function data() {
-    return {
-      direction: ''
-    };
-  },
-  methods: {
-    touchStart: function touchStart(event) {
-      this.resetTouchStatus();
-      this.startX = event.touches[0].clientX;
-      this.startY = event.touches[0].clientY;
-    },
-    touchMove: function touchMove(event) {
-      var touch = event.touches[0]; // safari back will set clientX to negative number
-
-      this.deltaX = touch.clientX < 0 ? 0 : touch.clientX - this.startX;
-      this.deltaY = touch.clientY - this.startY;
-      this.offsetX = Math.abs(this.deltaX);
-      this.offsetY = Math.abs(this.deltaY); // lock direction when distance is greater than a certain value
-
-      var LOCK_DIRECTION_DISTANCE = 10;
-
-      if (!this.direction || this.offsetX < LOCK_DIRECTION_DISTANCE && this.offsetY < LOCK_DIRECTION_DISTANCE) {
-        this.direction = getDirection(this.offsetX, this.offsetY);
-      }
-    },
-    resetTouchStatus: function resetTouchStatus() {
-      this.direction = '';
-      this.deltaX = 0;
-      this.deltaY = 0;
-      this.offsetX = 0;
-      this.offsetY = 0;
-    },
-    // avoid Vue 2.6 event bubble issues by manually binding events
-    // https://github.com/vant-ui/vant/issues/3015
-    bindTouchEvent: function bindTouchEvent(el) {
-      var onTouchStart = this.onTouchStart,
-          onTouchMove = this.onTouchMove,
-          onTouchEnd = this.onTouchEnd;
-      on(el, 'touchstart', onTouchStart);
-      on(el, 'touchmove', onTouchMove);
-
-      if (onTouchEnd) {
-        on(el, 'touchend', onTouchEnd);
-        on(el, 'touchcancel', onTouchEnd);
-      }
-    }
-  }
-};
 // EXTERNAL MODULE: ./node_modules/vant/es/mixins/relation.js + 1 modules
 var relation = __webpack_require__("mISK");
 
-// CONCATENATED MODULE: ./node_modules/vant/es/mixins/bind-event.js
-/**
- * Bind event when mounted or activated
- */
+// EXTERNAL MODULE: ./node_modules/vant/es/mixins/bind-event.js
+var bind_event = __webpack_require__("X74q");
 
-var uid = 0;
-function BindEventMixin(handler) {
-  var key = "binded_" + uid++;
-
-  function bind() {
-    if (!this[key]) {
-      handler.call(this, on, true);
-      this[key] = true;
-    }
-  }
-
-  function unbind() {
-    if (this[key]) {
-      handler.call(this, off, false);
-      this[key] = false;
-    }
-  }
-
-  return {
-    mounted: bind,
-    activated: bind,
-    deactivated: unbind,
-    beforeDestroy: unbind
-  };
-}
 // CONCATENATED MODULE: ./node_modules/vant/es/swipe/index.js
 // Utils
 
@@ -5317,7 +6756,7 @@ var _createNamespace = Object(create["a" /* createNamespace */])('swipe'),
     bem = _createNamespace[1];
 
 /* harmony default export */ var swipe = __webpack_exports__["a"] = (createComponent({
-  mixins: [TouchMixin, Object(relation["b" /* ParentMixin */])('vanSwipe'), BindEventMixin(function (bind, isBind) {
+  mixins: [touch["a" /* TouchMixin */], Object(relation["b" /* ParentMixin */])('vanSwipe'), Object(bind_event["a" /* BindEventMixin */])(function (bind, isBind) {
     bind(window, 'resize', this.resize, true);
     bind(window, 'orientationchange', this.resize, true);
     bind(window, 'visibilitychange', this.onVisibilityChange);
@@ -5487,7 +6926,7 @@ var _createNamespace = Object(create["a" /* createNamespace */])('swipe'),
       this.touchMove(event);
 
       if (this.isCorrectDirection) {
-        preventDefault(event, this.stopPropagation);
+        Object(dom_event["c" /* preventDefault */])(event, this.stopPropagation);
         this.move({
           offset: this.delta
         });
@@ -5827,6 +7266,44 @@ module.exports = DESCRIPTORS ? function (object, key, value) {
   return object;
 };
 
+
+/***/ }),
+
+/***/ "X74q":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return BindEventMixin; });
+/* harmony import */ var _utils_dom_event__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("EyXw");
+/**
+ * Bind event when mounted or activated
+ */
+
+var uid = 0;
+function BindEventMixin(handler) {
+  var key = "binded_" + uid++;
+
+  function bind() {
+    if (!this[key]) {
+      handler.call(this, _utils_dom_event__WEBPACK_IMPORTED_MODULE_0__[/* on */ "b"], true);
+      this[key] = true;
+    }
+  }
+
+  function unbind() {
+    if (this[key]) {
+      handler.call(this, _utils_dom_event__WEBPACK_IMPORTED_MODULE_0__[/* off */ "a"], false);
+      this[key] = false;
+    }
+  }
+
+  return {
+    mounted: bind,
+    activated: bind,
+    deactivated: unbind,
+    beforeDestroy: unbind
+  };
+}
 
 /***/ }),
 
@@ -11233,7 +12710,7 @@ module.exports = function (IteratorConstructor, NAME, next) {
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return inBrowser; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "f", function() { return isServer; });
-/* unused harmony export noop */
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "g", function() { return noop; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return isDef; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "d", function() { return isFunction; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "e", function() { return isObject; });
@@ -11667,6 +13144,13 @@ module.exports = function (argument) {
 
 /***/ }),
 
+/***/ "pxog":
+/***/ (function(module, exports, __webpack_require__) {
+
+// extracted by mini-css-extract-plugin
+
+/***/ }),
+
 /***/ "qY7S":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -11773,70 +13257,9 @@ var create = __webpack_require__("0oIA");
 // EXTERNAL MODULE: ./node_modules/vant/es/utils/format/unit.js + 1 modules
 var unit = __webpack_require__("6o6n");
 
-// EXTERNAL MODULE: ./node_modules/@babel/runtime/helpers/esm/extends.js
-var esm_extends = __webpack_require__("wx14");
+// EXTERNAL MODULE: ./node_modules/vant/es/utils/functional.js
+var functional = __webpack_require__("ujET");
 
-// EXTERNAL MODULE: ./node_modules/vue/dist/vue.min.js
-var vue_min = __webpack_require__("9rUL");
-var vue_min_default = /*#__PURE__*/__webpack_require__.n(vue_min);
-
-// CONCATENATED MODULE: ./node_modules/vant/es/utils/functional.js
-
-
-var inheritKey = ['ref', 'key', 'style', 'class', 'attrs', 'refInFor', 'nativeOn', 'directives', 'staticClass', 'staticStyle'];
-var mapInheritKey = {
-  nativeOn: 'on'
-}; // inherit partial context, map nativeOn to on
-
-function inherit(context, inheritListeners) {
-  var result = inheritKey.reduce(function (obj, key) {
-    if (context.data[key]) {
-      obj[mapInheritKey[key] || key] = context.data[key];
-    }
-
-    return obj;
-  }, {});
-
-  if (inheritListeners) {
-    result.on = result.on || {};
-
-    Object(esm_extends["a" /* default */])(result.on, context.data.on);
-  }
-
-  return result;
-} // emit event
-
-function emit(context, eventName) {
-  for (var _len = arguments.length, args = new Array(_len > 2 ? _len - 2 : 0), _key = 2; _key < _len; _key++) {
-    args[_key - 2] = arguments[_key];
-  }
-
-  var listeners = context.listeners[eventName];
-
-  if (listeners) {
-    if (Array.isArray(listeners)) {
-      listeners.forEach(function (listener) {
-        listener.apply(void 0, args);
-      });
-    } else {
-      listeners.apply(void 0, args);
-    }
-  }
-} // mount functional component
-
-function mount(Component, data) {
-  var instance = new vue_min_default.a({
-    el: document.createElement('div'),
-    props: Component.props,
-    render: function render(h) {
-      return h(Component, Object(esm_extends["a" /* default */])({
-        props: this.$props
-      }, data));
-    }
-  });
-  document.body.appendChild(instance.$el);
-  return instance;
-}
 // EXTERNAL MODULE: ./node_modules/vant/es/utils/index.js
 var utils = __webpack_require__("oUJm");
 
@@ -11863,7 +13286,7 @@ function Info(h, props, slots, ctx) {
     "class": bem({
       dot: dot
     })
-  }, inherit(ctx, true)]), [dot ? '' : props.info]);
+  }, Object(functional["b" /* inherit */])(ctx, true)]), [dot ? '' : props.info]);
 }
 
 Info.props = {
@@ -11912,7 +13335,7 @@ function Icon(h, props, slots, ctx) {
       color: props.color,
       fontSize: Object(unit["a" /* addUnit */])(props.size)
     }
-  }, inherit(ctx, true)]), [slots.default && slots.default(), imageIcon && h("img", {
+  }, Object(functional["b" /* inherit */])(ctx, true)]), [slots.default && slots.default(), imageIcon && h("img", {
     "class": icon_bem('image'),
     "attrs": {
       "src": name
@@ -12237,6 +13660,75 @@ module.exports = {
 
 /***/ }),
 
+/***/ "ujET":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return inherit; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return emit; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return mount; });
+/* harmony import */ var _babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("wx14");
+/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__("9rUL");
+/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(vue__WEBPACK_IMPORTED_MODULE_1__);
+
+
+var inheritKey = ['ref', 'key', 'style', 'class', 'attrs', 'refInFor', 'nativeOn', 'directives', 'staticClass', 'staticStyle'];
+var mapInheritKey = {
+  nativeOn: 'on'
+}; // inherit partial context, map nativeOn to on
+
+function inherit(context, inheritListeners) {
+  var result = inheritKey.reduce(function (obj, key) {
+    if (context.data[key]) {
+      obj[mapInheritKey[key] || key] = context.data[key];
+    }
+
+    return obj;
+  }, {});
+
+  if (inheritListeners) {
+    result.on = result.on || {};
+
+    Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])(result.on, context.data.on);
+  }
+
+  return result;
+} // emit event
+
+function emit(context, eventName) {
+  for (var _len = arguments.length, args = new Array(_len > 2 ? _len - 2 : 0), _key = 2; _key < _len; _key++) {
+    args[_key - 2] = arguments[_key];
+  }
+
+  var listeners = context.listeners[eventName];
+
+  if (listeners) {
+    if (Array.isArray(listeners)) {
+      listeners.forEach(function (listener) {
+        listener.apply(void 0, args);
+      });
+    } else {
+      listeners.apply(void 0, args);
+    }
+  }
+} // mount functional component
+
+function mount(Component, data) {
+  var instance = new vue__WEBPACK_IMPORTED_MODULE_1___default.a({
+    el: document.createElement('div'),
+    props: Component.props,
+    render: function render(h) {
+      return h(Component, Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({
+        props: this.$props
+      }, data));
+    }
+  });
+  document.body.appendChild(instance.$el);
+  return instance;
+}
+
+/***/ }),
+
 /***/ "unQa":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -12272,6 +13764,13 @@ module.exports = !fails(function () {
   return Object.isExtensible(Object.preventExtensions({}));
 });
 
+
+/***/ }),
+
+/***/ "vBum":
+/***/ (function(module, exports, __webpack_require__) {
+
+// extracted by mini-css-extract-plugin
 
 /***/ }),
 
@@ -12932,4 +14431,4 @@ $({ target: 'Map', stat: true }, {
 /***/ })
 
 }]);
-//# sourceMappingURL=2.c0b4777f33ad339032da.js.map
+//# sourceMappingURL=2.ce2dc550d95ceda8cc0e.js.map
